@@ -1180,7 +1180,7 @@ $(window).on('load', function() {
 $(document).ready(function(){
   // Check if LocalStorage is define
   let whishListIcon = $('.wishlist-icon');
-  let whishList_handles = [];
+  // let whishList_handles = [];
   let whishlistFound = localStorage.getItem('WishList');
   if(whishlistFound != null){
     localStorage.setItem("WishList",whishlistFound);

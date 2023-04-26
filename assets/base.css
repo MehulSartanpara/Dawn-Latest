@@ -3155,7 +3155,7 @@ details-disclosure > details {
 
 .related-slide-grid {
     display: flex !important;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     border: 10px solid #dfe3e8;
     border-bottom: 0;
     position: relative;
@@ -3671,6 +3671,9 @@ details-disclosure > details {
 .product_page_add_to_wishlist_button.added-to-wishlist path{
   fill: #ff0000;
   stroke: #ff0000;
+}
+.wishlist-product-image{
+   overflow: hidden;
 }
 @media (max-width: 480px){
   .button--full-width {
