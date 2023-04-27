@@ -3334,7 +3334,7 @@ details-disclosure > details {
 
 .quick-view {
     position: absolute;
-    top: 3px;
+    top: 38px;
     right: 5px;
     z-index: 9;
     cursor: pointer;
@@ -3575,8 +3575,8 @@ details-disclosure > details {
 /* Wishlist Css */
 .wishlist-icon {
   position: absolute;
-  top: 34px;
-  right: 5px;
+  top: 11px;
+  right: 6px;
   z-index: 9;
   cursor: pointer;
   transition: all .5s ease;

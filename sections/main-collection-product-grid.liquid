@@ -161,10 +161,12 @@
                     section_id: section.id
                   %}
                   {% render 'wishlist-icon' %}
+                  {% comment %}
                   {% render 'eyes-icon' %}
                   {% render 'quick-view' , 
                      product: product,
                      section_id: section.id %}
+                  {% endcomment %}
                 </li>
 
               {%- endfor -%}

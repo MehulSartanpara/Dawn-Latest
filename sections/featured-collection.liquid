@@ -87,10 +87,12 @@
              show_quick_add: section.settings.enable_quick_add,
              section_id: section.id %}
             {% render 'wishlist-icon' %}
+            {% comment %}
             {% render 'eyes-icon' %}
             {% render 'quick-view'
-             , product: product,
-             section_id: section.id %}
+            , product: product,
+            section_id: section.id %}
+            {% endcomment %}
           </li>
         {%- else -%}
           {%- for i in (1..4) -%}
