@@ -1405,7 +1405,6 @@ $(document).ready(function(){
         let jsonWhishlist = JSON.stringify(whishList);
         $('.collection_item').each(function(){
           let productHandle = $(this).attr('data-product-handle');
-          console.log(productHandle);
           if (jsonWhishlist.includes(productHandle)){
             $(this).find('.wishlist-icon').addClass('added-to-wishlist');
           }else{
