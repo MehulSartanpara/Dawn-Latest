@@ -1399,6 +1399,22 @@ $(document).ready(function(){
         $('.product_page_add_to_wishlist_button').removeClass('added-to-wishlist');
         CountWishListProduct();
       }
+      // To check product in wishlist in collection level
+      setTimeout(function(){
+        let whishList = localStorage.getItem('WishList');
+        let jsonWhishlist = JSON.stringify(whishList);
+        $('.collection_item').each(function(){
+          let productHandle = $(this).attr('data-product-handle');
+          console.log(productHandle);
+          if (jsonWhishlist.includes(productHandle)){
+            $(this).find('.wishlist-icon').addClass('added-to-wishlist');
+            console.log('added');
+          }else{
+            $(this).find('.wishlist-icon').removeClass('added-to-wishlist');
+            console.log('remoeved');
+          }
+        });
+      },500);
   });
   // Check Product In WishList or Not In Product Page Load
   let ProductHandle = $('.product_page_add_to_wishlist_button').attr('data-product-handle');

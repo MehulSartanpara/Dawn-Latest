@@ -38,6 +38,15 @@ if (!customElements.get('quick-add-modal')) {
           this.updateImageSizes();
           this.preventVariantURLSwitching();
           super.show(opener);
+
+          // Code For Update Wishlist
+          let whishList = localStorage.getItem('WishList');
+          let jsonWhishlist = JSON.stringify(whishList);
+          let ProductHandle = $('.product_page_add_to_wishlist_button').attr('data-product-handle');
+            if (jsonWhishlist.includes(ProductHandle)){
+              $('.product_page_add_to_wishlist_button').addClass('added-to-wishlist');
+            }
+          
         })
         .finally(() => {
           opener.removeAttribute('aria-disabled');
