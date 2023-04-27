@@ -1408,10 +1408,8 @@ $(document).ready(function(){
           console.log(productHandle);
           if (jsonWhishlist.includes(productHandle)){
             $(this).find('.wishlist-icon').addClass('added-to-wishlist');
-            console.log('added');
           }else{
             $(this).find('.wishlist-icon').removeClass('added-to-wishlist');
-            console.log('remoeved');
           }
         });
       },500);
