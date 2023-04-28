@@ -1328,6 +1328,7 @@ $(document).ready(function(){
     $(this).find('.loading-overlay__spinner').removeClass('hidden');
     setTimeout(function(){
       localStorage.removeItem('WishList');
+      // console.log(localStorage.getItem('WishList'));
       $('.wishlist-product-grid .collection_item').remove();
       CountWishListProduct();
       $('.remove_all_from_wishlist').removeClass('loading');
